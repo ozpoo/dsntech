@@ -95,6 +95,10 @@ nav.sidebar a:hover {
   color: var(--accent);
 }
 
+nav.sidebar .folder-title {
+  font-weight: bold;
+}
+
 /* --- Main Content --- */
 
 main {
