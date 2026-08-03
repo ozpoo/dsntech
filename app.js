@@ -16,7 +16,7 @@ function render_page(url_path) {
   document.title = `${page.title} | Course Docs`
 
   document.querySelector('main').innerHTML = page.content
-  document.querySelector('.toc').innerHTML = `<h3><strong>On This Page</strong></h3>${page.toc}`
+  document.querySelector('.toc').innerHTML = `${page.toc}`
 
   document.querySelectorAll('.sidebar a[data-path]').forEach(a => {
     a.toggleAttribute('active', a.dataset.path === url_path)
