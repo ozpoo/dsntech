@@ -216,6 +216,12 @@ aside.toc {
   line-height: 1.3;
 }
 
+@media (max-width: 840px) {
+  aside.toc {
+    display: none;
+  }
+}
+
 aside.toc p {
   margin-top: 1rem;
 }
