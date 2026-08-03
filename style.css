@@ -108,21 +108,23 @@ main {
 main h1 {
   font-size: 1.6rem;
   line-height: 1.08;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-weight: bold;
 }
 
 main h2 {
   font-size: 1.5rem;
   line-height: 1.1;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
 main h3 {
   font-size: 1.2rem;
   line-height: 1.2;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
@@ -169,7 +171,7 @@ main pre code {
 
 main table {
   width: 100%;
-  margin: 2ch 0;
+  margin: 2rem 0;
   font-size: var(--txt-sm);
   text-align: left;
   border-radius: 1rem;
