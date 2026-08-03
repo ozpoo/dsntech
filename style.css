@@ -99,7 +99,7 @@ main {
   padding: 3.6rem 1rem;
   max-width: 620px;
   min-width: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 main ul.index {
@@ -140,7 +140,6 @@ main strong {
 }
 
 main p {
-  line-height: 1.5;
   margin: 1rem 0;
 }
 
