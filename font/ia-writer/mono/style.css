@@ -1,0 +1,39 @@
+@font-face {
+  font-family: ia-writer-mono;
+  src:
+    url("iAWriterMonoS-Regular.woff") format("woff2"),
+    url("iAWriterMonoS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: ia-writer-mono;
+  src:
+    url("iAWriterMonoS-Bold.woff") format("woff2"),
+    url("iAWriterMonoS-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: ia-writer-mono;
+  src:
+    url("iAWriterMonoS-Italic.woff") format("woff2"),
+    url("iAWriterMonoS-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: ia-writer-mono;
+  src:
+    url("iAWriterMonoS-BoldItalic.woff") format("woff2"),
+    url("iAWriterMonoS-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: block;
+}

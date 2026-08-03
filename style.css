@@ -1,0 +1,252 @@
+@import "/font/ia-writer/quattro/style.css";
+@import "/font/ia-writer/mono/style.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+  background: unset;
+  color: unset;
+  border: unset;
+  outline: unset;
+  text-align: unset;
+  font-size: unset;
+  font-weight: unset;
+  font-family: unset;
+  text-decoration: unset;
+  line-height: unset;
+}
+
+:root {
+  --sans: ia-writer-quattro, system-ui, sans-serif;
+  --mono: ia-writer-mono, ui-monospace, monospace;
+
+  --sidebar-w: 220px;
+  --toc-w: 220px;
+
+  --tint: #615c52;
+  --accent: blue;
+
+  --bg: color-mix(in srgb, white 98%, var(--tint));
+  --fg: color-mix(in srgb, black 88%, var(--tint) 8%);
+
+  --border: color-mix(in srgb, var(--bg) 90%, var(--fg));
+  --code: color-mix(in srgb, var(--bg) 92%, var(--fg));
+}
+
+html {
+  line-height: 1;
+}
+
+body {
+  font-family: var(--sans);
+  display: flex;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1;
+  text-rendering: geometricPrecision;
+}
+
+/* Navigation Sidebar */
+nav.sidebar {
+  width: var(--sidebar-w);
+  height: 100vh;
+  overflow-y: auto;
+  font-size: 0.84rem;
+  padding: 1.2rem;
+  position: sticky;
+  top: 0;
+  line-height: 1.8;
+}
+
+nav.sidebar h2 {
+  font-weight: bold;
+  min-height: 4rem;
+  line-height: 1.2;
+  margin-top: -.1rem;
+  padding-bottom: 1rem;
+}
+
+nav.sidebar ul {
+  list-style: none;
+  padding-left: 0.6rem;
+}
+
+nav.sidebar>ul {
+  padding-left: 0;
+}
+
+nav.sidebar li {
+  color: var(--fg-2);
+}
+
+nav.sidebar a {
+  color: var(--fg);
+  display: block;
+}
+
+nav.sidebar a.active {
+  color: var(--accent);
+}
+
+nav.sidebar a:hover {
+  color: var(--accent);
+}
+
+/* --- Main Content --- */
+
+main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 680px;
+  min-width: 0;
+  line-height: 1.5;
+}
+
+main h1 {
+  font-size: 1.6rem;
+  line-height: 1.08;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+main h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+main strong {
+  font-weight: bold;
+}
+
+main em {
+  font-style: italic;
+}
+
+main p {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+main ul {
+  padding-left: 2rem;
+}
+
+main ol {
+  padding-left: 2rem;
+}
+
+main li {
+  line-height: 1.5;
+}
+
+main hr {
+  border: unset;
+  height: 1px;
+  background: var(--border);
+  margin: 2ch 0;
+}
+
+main code {
+  background: var(--code);
+  padding: 0.2em 0.4em;
+  border-radius: 0.6rem;
+  font-size: 0.8em;
+}
+
+main pre code {
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+main table {
+  width: 100%;
+  margin: 2ch 0;
+  font-size: 0.84rem;
+  text-align: left;
+  border-radius: 1rem;
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--border);
+}
+
+main th {
+  background: var(--bg-1);
+  color: var(--fg-2);
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+main td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--fg-1);
+  background: var(--bg-1);
+}
+
+main tr:last-child td {
+  border-bottom: none;
+}
+
+/* Document Table of Contents */
+aside.toc {
+  display: none;
+  width: var(--toc-w);
+  height: 100vh;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  font-size: 0.84rem;
+  position: sticky;
+  top: 0;
+  line-height: 1.8;
+}
+
+aside.toc h3 {
+  min-height: 3rem;
+  padding-bottom: 1rem;
+  color: var(--fg-2);
+}
+
+aside.toc ul {
+  list-style: none;
+}
+
+aside.toc li {
+  color: var(--fg-2);
+
+}
+
+aside.toc li a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+aside.toc li:hover {
+  color: var(--accent);
+}
+
+aside.toc li.toc-h2 {
+  color: var(--fg-1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+aside.toc li.toc-h3 {
+  padding-left: 0.6rem;
+}
